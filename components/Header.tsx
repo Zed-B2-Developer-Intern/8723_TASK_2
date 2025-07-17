@@ -35,7 +35,7 @@ export function Header() {
         </button>
 
         {/* Navigation */}
-        <nav className="hidden sm:flex space-x-6">
+        <nav className="hidden sm:flex space-x-5">
           <Link href="/">
             <p className="text-gray-700 hover:text-blue-600 font-semibold">Home</p>
           </Link>
@@ -47,6 +47,9 @@ export function Header() {
           </Link>
           <Link href="/contact">
             <p className="text-gray-700 hover:text-blue-600 font-semibold">Contact</p>
+          </Link>
+          <Link href="/auth/login">
+            <button className="bg-blue-500 text-white px-4 py-1 rounded-2xl hover:scale-105 font-semibold">Login/Signup</button>
           </Link>
         </nav>
       </div>
@@ -65,6 +68,9 @@ export function Header() {
           </Link>
           <Link href="/contact">
             <p className="block text-gray-700 hover:text-blue-600 font-semibold">📞Contact</p>
+          </Link>
+          <Link href="/auth/login">
+            <button className="block bg-blue-500 text-white px-4 py-1 rounded-2xl hover:scale-105 font-semibold">🔐Login/Signup</button>
           </Link>
         </div>
       )}
